@@ -1,0 +1,105 @@
+ul{
+  /* right: 50px; */
+}
+li{
+  display: list-item;
+  list-style: none;
+}
+.first{
+  height: 825px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(120deg, #74C3FF, #278CF1);
+}
+.first .left{
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 8%;
+  width: 480px;
+  height: 600px;
+}
+.first .left img{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.first .right{
+  position: absolute;
+  width: 380px;
+  height: 420px;
+  top: 25%;
+  right: 20%;
+}
+.first .right .text-title{
+  position: absolute;
+  top: 0px;
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.first .right .last{
+  position: absolute;
+  left: 58%;
+  bottom: 0%;
+  height: 160px;
+}
+.first .right .iphone{
+  position: absolute;
+  left: 0px;
+  top: 65%;
+}
+.first .right .android{
+  position: absolute;
+  left: 0px;
+  bottom: 5%;
+}
+
+.second{
+  width: 100%;
+  height: 825px;
+  background: burlywood;
+  position: relative;
+}
+
+.third{
+  width: 100%;
+  height: 825px;
+  background: rebeccapurple;
+  position: relative;
+}
+.forth{
+  width: 100%;
+  height: 825px;
+  background: palegreen;
+  position: relative;
+}
+.fifth{
+  width: 100%;
+  height: 825px;
+  background: peru;
+  position: relative;
+}
+.sixth{
+  width: 100%;
+  height: 825px;
+  background: powderblue;
+  position: relative;
+}
+.seventh{
+  width: 100%;
+  height: 825px;
+  background: rebeccapurple;
+  position: relative;
+}
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
