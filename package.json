@@ -36,9 +36,11 @@
     "antd": "^3.6.5",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
+    "layui": "0.0.1",
     "react": "^16.4.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.1",
+    "react-fullpage": "^0.1.18",
     "react-slider-light": "^4.1.1",
     "style-loader": "^0.21.0"
   }

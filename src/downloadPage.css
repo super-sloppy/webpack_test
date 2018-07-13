@@ -13,23 +13,24 @@ li{
 }
 .first .left{
   position: absolute;
-  margin-left: 13%;
-  margin-top: 8%;
-  width: 480px;
+  top: 50%;
+  left: 50%;
+  margin-left: -535px;
+  margin-top: -300px;
   height: 600px;
 }
 .first .left img{
-  width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
+  /* width: auto; */
+	height: 100%;
+	/* max-width: 100%; */
+	/* max-height: 100%; */
 }
 .first .right{
   position: absolute;
   width: 380px;
   height: 420px;
   top: 25%;
-  right: 20%;
+  left: 52%;
 }
 .first .right .text-title{
   position: absolute;
@@ -54,52 +55,645 @@ li{
 .first .right .android{
   position: absolute;
   left: 0px;
-  bottom: 5%;
+  bottom: 2%;
 }
 
 .second{
   width: 100%;
   height: 825px;
-  background: burlywood;
+  background: linear-gradient(-120deg, #4561DB, #64ABED);
   position: relative;
+}
+
+.second .left{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -330px;
+  /* width: 425px; */
+  height: 660px;
+  animation: animateInfoLeft .5s;
+
+}
+
+.second .left img{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.second .right{
+  position: absolute;
+  width: 400px;
+  height: 390px;
+  top: 29%;
+  left: 51%;
+  animation: animateInfoRight .5s;
+
+}
+.second .right img{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .third{
   width: 100%;
   height: 825px;
-  background: rebeccapurple;
+  background: linear-gradient(120deg, #F7EBD5, #F7CEA3);
   position: relative;
 }
+.third .left{
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin-right: 100px;
+  height: 750px;
+  animation: animateInfoLeft .5s;
+}
+@keyframes animateInfoLeft{
+  0%  {transform: translateX(-200px);}
+  100%{}
+}
+.third .left img{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.third .title{
+  position: absolute;
+  margin-left: 52%;
+  margin-top: 18%;
+  width: 380px;
+  animation: animateInfoRight .5s;
+}
+@keyframes animateInfoRight{
+  0%  {transform: translateX(200px)}
+  100%{}
+}
+
+
+.third .right{
+  position: absolute;
+  margin-left: 52%;
+  margin-top: 37.5%;
+  width: 380px;
+  height: 180px;
+}
+
+
+
+
+.third .right .cost{
+  position: inherit;
+  width: 90px;
+  animation: animateInfoBottom .5s;
+}
+.third .right .percent{
+  position: inherit;
+  width: 90px;
+  margin-left: 39%;
+  animation: animateInfoBottom .5s;
+}
+.third .right .time{
+  position: inherit;
+  width: 90px;
+  margin-left: 78%;
+  animation: animateInfoBottom .5s;
+}
+@keyframes animateInfoBottom{
+  0%  {margin-top: -100px; transform: rotate(-180deg);}
+  100%{margin-top: 0px; transform: rotate(0deg);}
+}
+
+
+
 .forth{
   width: 100%;
   height: 825px;
-  background: palegreen;
+  background: linear-gradient(120deg, #E2F6F1, #65D2DF);
   position: relative;
 }
+.forth .title{
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  top: 7.5%;
+  right: 50%;
+  
+}
+.forth .title img{
+  position: absolute;
+  width: 100%;
+}
+
+
+.forth .left{
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: 85px;
+  height: 540px;
+  animation: animateToolForthLeft .5s;
+}
+@keyframes animateToolForthLeft{
+  0%  {margin-right: 210px};
+  100%{margin-right: 85px};
+}
+.forth .right{
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: -400px;
+  height: 540px;
+  animation: animateToolForthRight .5s;
+}
+@keyframes animateToolForthRight{
+  0%  {margin-right: -535px};
+  100%{margin-right: -400px};
+}
+
+
+
+
 .fifth{
   width: 100%;
   height: 825px;
-  background: peru;
+  background: linear-gradient(120deg, #EEF1F6, #DCDFE5);
   position: relative;
 }
+.fifth .title{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 510px;
+  margin-left: -255px;
+  /* background: black; */
+}
+.fifth .title .major{
+  position: absolute;
+  width: 100%;
+  animation: animateToolTitle 4.5s 3s infinite;
+  opacity: 0;
+
+}
+.fifth .title .school{
+  position: absolute;
+  width: 100%;
+  animation: animateToolTitle 4.5s 1.5s infinite;
+  opacity: 0;
+
+}
+.fifth .title .test{
+  position: absolute;
+  width: 100%;
+  animation: animateToolTitle 4.5s infinite;
+  opacity: 0;
+
+}
+@keyframes animateToolTitle{
+	0%   {opacity:0.5;}
+  25%  {opacity:1;}
+  35%  {opacity:0.6;}
+  40%  {opacity:0.2;}
+  45%  {opacity:0;}
+  100% {opacity:0;}
+}
+.fifth .view{
+  position: absolute;
+  width: 100%;
+  height: 355px;
+  top: 40%;
+}
+.fifth .view .image-middle{
+  position: absolute;
+  left: 50%;
+  margin-left: -110px;
+  top: -50px;
+  width: 220px;
+  height: 460px;
+  background-size: 220px;
+  /* background: black; */
+}
+.fifth .view .image-middle .wihite-background{
+  margin: 50px 10px;
+  height: 360px;
+  background: white;
+  width: 170px;
+}
+.fifth .view .image-middle .wihite-background .image-background{
+  position: absolute;
+  width: 100%;
+  top: -1%;
+}
+.fifth .view .image-middle .wihite-background .img-one{
+  margin-left: 7.5px;
+  position: absolute;
+  width: 200px;
+  height: 355px;
+  top: 50px;
+  bottom: 240px;
+  animation: animateToolScrollTwo 4.5s 1.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-middle .wihite-background .img-two{
+  margin-left: 7.5px;
+  position: absolute;
+  width: 200px;
+  height: 355px;
+  top: 50px;
+  bottom: 240px;
+  animation: animateToolScrollTwo 4.5s 3s infinite;
+  opacity: 0;
+}
+.fifth .view .image-middle .wihite-background .img-three{
+  margin-left: 7.5px;
+  position: absolute;
+  width: 200px;
+  height: 355px;
+  top: 50px;
+  bottom: 240px;
+  animation: animateToolScrollTwo 4.5s infinite;
+  opacity: 0;
+}
+@keyframes animateToolScrollTwo{
+	0%   {opacity:0;transform: translateX(200px);}
+  15%  {opacity:1; transform: translateX(0px);}
+  35%  {opacity:1;transform: translateX(0px);}
+  60%  {opacity:0; transform: translateX(-200px);}
+  100% {opacity:0;}
+}
+
+.fifth .view .image-one{
+  left: 50%;
+  margin-left: -542px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageOne 4.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-one img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-two{
+  left: 50%;
+  margin-left: -542px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageOne 4.5s 1.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-two img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-three{
+  left: 50%;
+  margin-left: -542px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageOne 4.5s 3s infinite;
+  opacity: 0;
+}
+.fifth .view .image-three img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes animateToolImageOne{
+	0%   {opacity:1;transform: translate(222px);}
+  15%  {opacity:1; transform: translateX(0px); background: linear-gradient(to right, #EEF1F6, #fff)}
+  35%  {opacity:1;transform: translateX(0px); background: linear-gradient(to right, #EEF1F6, #fff)}
+  50%  {opacity:0; transform: translateX(-200px);}
+  100% {opacity:0;}
+}
+
+.fifth .view .image-four{
+  left: 50%;
+  margin-left: -320px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageTwo 4.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-four img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-five{
+  left: 50%;
+  margin-left: -320px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageTwo 4.5s 1.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-five img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-six{
+  left: 50%;
+  margin-left: -320px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageTwo 4.5s 3s infinite;
+  opacity: 0;
+}
+.fifth .view .image-six img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes animateToolImageTwo{
+	0%   {opacity:0;transform: translateX(200px);}
+  15%  {opacity:1; transform: translateX(0px);}
+  35%  {opacity:1;transform: translateX(0px);}
+  50%  {opacity:0; transform: translateX(-200px);}
+  100% {opacity:0;}
+}
+
+
+.fifth .view .image-1{
+  left: 50%;
+  margin-left: 142px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageThree 4.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-1 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-2{
+  left: 50%;
+  margin-left: 142px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageThree 4.5s 1.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-2 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-3{
+  left: 50%;
+  margin-left: 142px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageThree 4.5s 3s infinite;
+  opacity: 0;
+}
+.fifth .view .image-3 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes animateToolImageThree{
+	0%   {opacity:0;transform: translateX(200px);}
+  15%  {opacity:1; transform: translateX(0px);}
+  35%  {opacity:1;transform: translateX(0px);}
+  50%  {opacity:0; transform: translateX(-200px);}
+  100% {opacity:0;}
+}
+
+
+.fifth .view .image-4{
+  left: 50%;
+  margin-left: 364px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageFour 4.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-4 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-5{
+  left: 50%;
+  margin-left: 364px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageFour 4.5s 1.5s infinite;
+  opacity: 0;
+}
+.fifth .view .image-5 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.fifth .view .image-6{
+  left: 50%;
+  margin-left: 364px;
+  width: 200px;
+  height: 355px;
+  position: absolute;
+  background: white;
+  animation: animateToolImageFour 4.5s 3s infinite;
+  opacity: 0;
+}
+.fifth .view .image-6 img{
+  margin-top: -45px;
+  margin-left: -45px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes animateToolImageFour{
+	0%   {opacity:0;transform: translate(222px);}
+  15%  {opacity:1; transform: translateX(0px); background: linear-gradient(to right, #fff, #DCDFE5)}
+  35%  {opacity:1;transform: translateX(0px); background: linear-gradient(to right, #fff, #DCDFE5)}
+  50%  {opacity:0; transform: translateX(-200px);}
+  100% {opacity:0;}
+}
+
+
+
+
+
+
+
 .sixth{
   width: 100%;
   height: 825px;
-  background: powderblue;
+  background: linear-gradient(120deg, #ECEDB3, #F0D062);
+  /* background: url(/img/background.png); */
   position: relative;
 }
+.sixth .title{
+  position: absolute;
+  text-align: center;
+  width: 420px;
+  top: 12%;
+  right: 50%;
+}
+.sixth .title img{
+  position: absolute;
+  width: 100%;
+}
+.sixth .arc-background{
+  position: absolute;
+  width: 100%;
+  height: 530px;
+  bottom: 0;
+  background: url('/background-6.png') no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+
+.sixth .arc-background .circle-1{
+  position: absolute;
+  width: 100px;
+  margin-left: 26%;
+  margin-top: 3%;
+  animation: animateInfoLeft .5s;
+
+}
+.sixth .arc-background .circle-2{
+  position: absolute;
+  width: 110px;
+  margin-left: 60%;
+  margin-top: -1%;
+  animation: animateInfoRight .5s;
+
+}
+.sixth .arc-background .circle-3{
+  position: absolute;
+  width: 90px;
+  margin-left: 75%;
+  margin-top: 11%;
+  animation: animateInfoRight .5s;
+
+}
+
+
+.sixth .bottom{
+  position: absolute;
+  width: 360px;
+  left: 38%;
+  top: 52.5%;
+  animation: animateInfoRight .5s;
+
+}
+
+.sixth .bottom img{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .seventh{
   width: 100%;
   height: 825px;
-  background: rebeccapurple;
+  background: linear-gradient(120deg, #74C3FF, #46A0FA);
   position: relative;
 }
-
-
-
+.seventh .wrapper{
+  position: absolute;
+  width: 700px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -350px;
+}
+.seventh .wrapper .title{
+  position: absolute;
+  width: 580px;
+  left: 50%;
+  top: 16%;
+  margin-left: -290px;
+}
+.seventh .wrapper .iphone{
+  position: absolute;
+  left: 17%;
+  top: 54%;
+}
+.seventh .wrapper .android{
+  position: absolute;
+  left: 17%;
+  bottom: 15%;
+}
+.seventh .wrapper .code{
+  width: 160px;
+  position: absolute;
+  bottom: 14%;
+  right: 20%;
+}
 
 *{
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
